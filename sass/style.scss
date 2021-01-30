@@ -1,0 +1,19 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+body{
+    & a{
+        text-decoration: none;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    
+}
+#product__list{
+    width: 100%;
+    flex-wrap: wrap;
+}
+.card{
+    max-width: 50rem ;
+    margin: auto;
+}

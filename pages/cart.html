@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <title>Orinoco</title>
+    <meta charset="utf-8" />
+    <meta name="description"
+      content="Site de presentation de l'agence Web La chouette agence basée à Lyon avec une présentation des projets réaliser" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <link rel="stylesheet" type="text/css" href="../public/css/style.css" />
+    <script type="text/javascript" src="../public/script/cart.js"></script>
+    
+  </head>
+
+  <body>
+    <div class="page-container">
+      <header>
+        <nav>
+          <nav class="nav nav-pills flex-column flex-sm-row">
+            <a class="flex-sm-fill text-sm-center nav-link " href="../index.html" >Accueil</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="#" active>Panier</a>
+          </nav>
+        </nav>
+      </header>
+      <main> 
+        <div class="row g-3">
+          <div class="col-md-5 col-lg-4 order-md-last">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+              <span class="text-muted">Votre panier</span>
+              <span id="product__amount" class="badge bg-secondary rounded-pill"></span>
+            </h4>
+            <ul id="product__overview" class="list-group mb-3">
+            </ul>
+          </div>
+          <div class="col-md-7 col-lg-8">
+            <h4 class="mb-3">Adresse d'envoie</h4>
+            <form  method="POST" id="contact__form" name="contact__form" class="needs-validation" novalidate>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="firstName" class="form-label">Votre nom</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="Nom" value="" required>
+                  <div class="invalid-feedback">
+                    Veuillez entrer un nom valide !
+                  </div>
+                </div>
+    
+                <div class="col-sm-6">
+                  <label for="lastName" class="form-label">Votre prénom</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="Prénom" value="" required>
+                  <div class="invalid-feedback">
+                    Veuillez entrer un prénom valide !
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="address" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                  <div class="invalid-feedback">
+                    Please enter your shipping address.
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <label for="city" class="form-label">Ville</label>
+                  <input type="text" class="form-control" id="city" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Zip code required.
+                  </div>
+                </div>
+                
+                <div class="col-12">
+                  <label for="email" class="form-label">Votre e-mail </label>
+                  <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                  <div class="invalid-feedback">
+                    Please enter a valid email address for shipping updates.
+                  </div>
+                </div>
+              </div>
+
+              <hr class="my-4">
+    
+              <button class="w-100 btn btn-primary btn-lg" type="submit" value="order">Continue to checkout</button>
+              <div id="output"></div>
+            </form>
+          </div>
+        </div>
+      </main>    
+      <section id="cart__list" class="d-flex flex-row">
+      </section>
+
+      <footer>
+      </footer>
+    </div>
+  </body>
+  <script>cartProducts();</script>
+</html>
