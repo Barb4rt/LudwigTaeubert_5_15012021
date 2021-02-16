@@ -5,31 +5,30 @@
     <title>Orinoco</title>
     <meta charset="utf-8" />
     <meta name="description"
-      content="" />
+      content="Site de " />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <link rel="stylesheet" type="text/css" href="../public/css/style.css" />
+    <script src="https://kit.fontawesome.com/9186bf1a06.js" crossorigin="anonymous"></script>
     
   </head>
 
-  <body>
-    <div class="page-container">
+  <body class="d-flex text-white bg-dark">
+    <div class="container-fluid d-flex flex-column">
       <header>
-        <nav>
           <nav class="nav nav-pills flex-column flex-sm-row">
-            <a class="flex-sm-fill text-sm-center nav-link " href="../index.html" >Accueil</a>
-            <a class="flex-sm-fill text-sm-center nav-link" href="/pages/cart.html">Panier</a>
+            <a class="flex-sm-fill text-sm-center nav-link " href="../index.html" active>Accueil</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="./cart.html">Panier</a>
           </nav>
-        </nav>
       </header>
-      <!-- PRODUCT -->      
-      <section id="product__view" class="d-flex flex-column">
+      <section id="product__view" class="productView d-flex flex-column bd-highlight">
       </section>
-
       <footer>
       </footer>
     </div>
   </body>
   
-  <script type="text/javascript" src="../public/script/script.js"></script>
+  <script type="text/javascript" src="../public/script/productView.js"></script>
     <script>detailledProducts();</script>  
 </html>
+
+

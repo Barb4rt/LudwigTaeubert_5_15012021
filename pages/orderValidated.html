@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+      <title>Orinoco</title>
+      <meta charset="utf-8" />
+      <meta name="description"
+        content="Site de " />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+      <link rel="stylesheet" type="text/css" href="../public/css/style.css" />
+      <script src="https://kit.fontawesome.com/9186bf1a06.js" crossorigin="anonymous"></script>
+      
+    </head>
+  
+    <body class="d-flex text-white bg-dark">
+      <div class="container-fluid">
+      <h1 class="text-center">ORINOCCO</h1>
+      <p class="text-center">Votre commande numero : <span id="order_id"></span><br>pour un total de <span id="total"></span>a bien etait prise en compte <strong>Orinocco</strong> vous remercie</p>
+      <button id="accueil" class="btn btn-light col-6 mx-auto d-grid  " onclick="backToIndex()">Retourner à l'accueil</button>
+    </div>
+  </body>
+  <script>
+        let orderId = sessionStorage.getItem('orderId');
+        let total = sessionStorage.getItem('total');
+        let elem = document.getElementById('order_id');
+        elem.textContent = orderId
+        elem = document.getElementById('total');
+        elem.textContent = total
+        function backToIndex(){
+          document.location.href='.././index.html'
+          sessionStorage.clear()
+        }
+
+  </script>
+  
+</html>

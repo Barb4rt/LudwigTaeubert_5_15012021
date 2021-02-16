@@ -5,14 +5,15 @@
     <title>Orinoco</title>
     <meta charset="utf-8" />
     <meta name="description"
-      content="Site de presentation de l'agence Web La chouette agence basée à Lyon avec une présentation des projets réaliser" />
+      content="Site de " />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <link rel="stylesheet" type="text/css" href="public/css/style.css" />
+    <script src="https://kit.fontawesome.com/9186bf1a06.js" crossorigin="anonymous"></script>
     
   </head>
 
-  <body>
-    <div class="page-container">
+  <body class="d-flex text-white bg-dark">
+    <div class="container-fluid">
       <header>
         <nav>
           <nav class="nav nav-pills flex-column flex-sm-row">
@@ -21,15 +22,18 @@
           </nav>
         </nav>
       </header>
-      <a ></a>
+      <section id="presentation" class="cover-container w-100 d-flex p-3 mx-auto flex-column">
+        <h1>ORINOCO</h1>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lobortis magna sit amet faucibus aliquam. Suspendisse scelerisque urna in arcu fermentum, vel sagittis elit blandit. Mauris ac arcu diam. Aliquam lacinia dignissim erat, nec finibus neque tincidunt ut. Duis maximus quam tincidunt, volutpat nisl in, aliquet dolor. In ante risus, hendrerit vitae condimentum sed, lacinia eu eros.</p>
+      </section>
       <!-- PRODUCT LIST-->      
-      <section id="product__list" class="d-flex flex-row">
+      <section id="product__list" class="d-flex bd-highlight">
       </section>
 
       <footer>
       </footer>
     </div>
   </body>
-  <script type="text/javascript" src="public/script/script.js"></script>
+  <script type="text/javascript" src="public/script/listProduct.js"></script>
   <script>fillProducts()</script>
 </html>
