@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <title>Orinoco</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <link rel="stylesheet" type="text/css" href="../public/css/style.css" />
+    
+    
+  </head>
+
+  <body class="d-flex bg-dark">
+    <div class="container-fluid">
+      <header>
+        <nav class="nav nav-pills flex-column flex-sm-row">
+          <a class="flex-sm-fill text-sm-center nav-link " href="../index.html">Accueil</a>
+        </nav>
+      </header>
+
+        <div class="cart__row row g-3">
+          <div id="panier" class=" text-center col-lg-4 order-md-last">
+            <h4 class=" mb-3 text-white d-flex justify-content-between align-items-center mb-3">
+      Votre panier
+              <span id="product__amount" class="badge bg-secondary rounded-pill"></span>
+            </h4>
+            <ul id="product__overview" class="list-group text-white mb-3">
+            </ul>
+          </div>
+          <div id="formulaire" class="text-white col-md-7 col-lg-8">
+            <h4 class="mb-3">Adresse d'envoie</h4>
+            <form action="http://localhost:3000/api/teddies/order" id="contact__form" name="contact__form" class="needs-validation" novalidate>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="firstName" class="form-label">Votre nom</label>
+                  <input type="text" class="form-control" name="firstName" id="firstName" placeholder="Nom" value="" required>
+                  <div class="invalid-feedback">
+                    <p>Veuillez entrer un nom valide !
+                  </div>
+                </div>
+    
+                <div class="col-sm-6">
+                  <label for="lastName" class="form-label">Votre prénom</label>
+                  <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Prénom" value="" required>
+                  <div class="invalid-feedback">
+                    Veuillez entrer un prénom valide !
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="address" class="form-label">Address</label>
+                  <input type="text" class="form-control" name="address" id="address" placeholder="13 Rue de la paix" value="" required>
+                  <div class="invalid-feedback">
+                    Veuillez entrer une adresse valide !
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <label for="city" class="form-label">Ville</label>
+                  <input type="text" class="form-control" name="city" id="city" placeholder="Paris" value="" required>
+                  <div class="invalid-feedback">
+                    Veuillez entrer une ville valide !
+                  </div>
+                </div>
+                
+                <div class="col-12">
+                  <label for="email" class="form-label">Votre e-mail </label>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="you@example.com" value="" required>
+                  <div class="invalid-feedback">
+                    Veuillez entrer une adresse e-mail valide !
+                  </div>
+                </div>
+              </div>
+
+              <hr class="my-4">
+    
+              <button class="btn btn-light w-100 " type="submit" >Valider la commande</button>
+              <div id="output"></div>
+            </form>
+          </div>
+        </div>  
+
+      <footer>
+      </footer>
+    </div>
+    <script src="../public/script/cart.js"></script>
+  </body>
+</html>

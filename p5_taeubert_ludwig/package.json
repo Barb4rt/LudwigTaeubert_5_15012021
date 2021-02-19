@@ -1,0 +1,18 @@
+{
+  "name": "p5_taeubert_ludwig",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/style.scss:./public/css/style.css",
+    "prettify": "prettier --single-quote --trailing-comma all --write  public/script/*.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta1"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  }
+}
